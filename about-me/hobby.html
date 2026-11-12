@@ -1,52 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мои увлечения — Лаврентьева Милена</title>
-</head>
-<body>
-    <nav>
+     <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <p>Учебный сайт студента ИС-1-25</p>
+             <nav class="main-nav" aria-label="Главное меню">
         <ul>
-            <li><a href="index.html">Обо мне</a></li>
-            <li><a href="hobby.html">Мои увлечения</a></li>
-            <li><a href="college.html">Мой колледж</a></li>
+          <li><a href="index.html">Обо мне</a></li>
+          <li><a href="hobby.html">Мои увлечения</a></li>
+          <li><a href="college.html">Мой колледж</a></li>
+          <li><a href="season.html">Любимое время года</a></li>
+          <li><a href="application.html">Заявка</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="club.html">Клуб</a></li>
+           <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+            <li><a href="flex-lab.html">CSS Grid</a></li>
+             <li><a href="position-lab.html">Лаборатория позиционирования</a></li>
+             <li><a href="responsive-lab.html">Лаборатория адаптация</a></li>
+             <li><a href="project.html" aria-current="page">Проект</a></li> 
+             <li><a href="form-style-lab.html">Лабораторная: формы стилей</a></li>
+             <li><a href="styles-check.html">Проверка стилей </a></li>
+
+
         </ul>
-    </nav>    
-    <h1>Мои увлечения</h1>
-    <figure>
-        <img src="fepfgpoejgr.jpg" alt="Отрдыхаю" width="400">
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="top">Мои увлечения</h1>
+      
+      <figure>
+        <img src="fepfgpoejgr.jpg" alt="Отдыхаю" width="400">
         <figcaption>Рис. 1. Моё любимое увлечение</figcaption>
-    </figure>
+      </figure>
     
-<h2>Чем я люблю заниматься</h2>
-<ul>
-    <li>Смротреть сериалы</li>
-    <li>Играть</li>
-    <li>Рисовать</li>
-</ul>
-
-<h2>Мой топ-3 фильмов (или игр, книг, мест)</h2>
-<ol>
-    <li>Игра престолов</li>
-    <li>Твое сердце будет разбито</li>
-    <li>Маленький принц</li>
-</ol>
-
-<h2>Что я изучаю на практике</h2>
-<ul>
-    <li>HTML
+      <section aria-labelledby="hobbies-list">
+        <h2 id="hobbies-list">Чем я люблю заниматься</h2>
         <ul>
-            <li>Заголовки и абзацы</li>
-            <li>Списки и ссылки</li>
+          <li>Смотреть сериалы</li>
+          <li>Играть</li>
+          <li>Рисовать</li>
         </ul>
-    </li>
-    <li>Git
+      </section>
+
+      <section aria-labelledby="top-media">
+        <h2 id="top-media">Мой топ-3 фильмов (или игр, книг, мест)</h2>
+        <ol>
+          <li>Игра престолов</li>
+          <li>Твое сердце будет разбито</li>
+          <li>Маленький принц</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="practice-study">
+        <h2 id="practice-study">Что я изучаю на практике</h2>
         <ul>
-            <li>Коммиты</li>
-            <li>Ветки и GitHub</li>
+          <li>HTML
+            <ul>
+              <li>Заголовки и абзацы</li>
+              <li>Списки и ссылки</li>
+            </ul>
+          </li>
+          <li>Git
+            <ul>
+              <li>Коммиты</li>
+              <li>Ветки и GitHub</li>
+            </ul>
+          </li>
         </ul>
-    </li>
-</ul>
-</body>
+      </section>
+
+      <p><a href="#top">Наверх</a></p>
+      <footer class="page-footer">
+    <p>Автор: Лаврентьева Милена. Учебная практика УП.09.</p>
+</footer>
+
+<nav class="main-nav">
+
+    </main>
+  </body>
 </html>

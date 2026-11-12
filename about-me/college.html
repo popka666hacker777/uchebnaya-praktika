@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой колледж — Лаврентьева Милена</title>
+     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <header>
+             <nav class="main-nav" aria-label="Главное меню">
       <ul>
         <li><a href="index.html">Обо мне</a></li>
         <li><a href="hobby.html">Мои увлечения</a></li>
         <li><a href="college.html">Мой колледж</a></li>
+        <li><a href="season.html">Любимое время года</a></li>
+        <li><a href="application.html">Заявка</a></li>
+        <li><a href="schedule.html">Расписание</a></li>
+        <li><a href="club.html">Клуб</a></li>
+         <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="flex-lab.html">CSS Grid</a></li>
+           <li><a href="position-lab.html">Лаборатория позиционирования</a></li>
+           <li><a href="responsive-lab.html">Лаборатория адаптация</a></li>
+           <li><a href="project.html" aria-current="page">Проект</a></li> 
+           <li><a href="form-style-lab.html">Лабораторная: формы стилей</a></li>
+           <li><a href="styles-check.html">Проверка стилей </a></li>
+
       </ul>
     </nav>
-    <h1>Мой колледж</h1>
+    </header>
+    <main>
+      <h1 id="top">Мой колледж</h1>
     <p>
       Чебоксарский экономико-технологический колледж: два-три предложения о том, что это за место.
     </p>
@@ -22,13 +38,15 @@
       <figcaption>Рис. 1. Подпись к картинке</figcaption>
     </figure>
 
-    <h2>Моя специальность</h2>
+    <section aria-labelledby="specialty">
+      <h2 id="specialty">Моя специальность</h2>
     <p>
       Информационные системы и программирование (09.02.07): одно-два предложения
       о том, чем занимается эта специальность.
     </p>
-
-    <h2>Чему я учусь</h2>
+</section>
+    <section aria-labelledby="learning-skills">
+      <h2 id="learning-skills">Чему я учусь</h2>
     <ul>
       <li>Веб-разработка</li>
       <li>Базы данных</li>
@@ -43,8 +61,16 @@
         >Официальный сайт колледжа</a
       >
     </p>
-
-    <h1>Мой колледж</h1>
+  </section>
+    <h2>Мой колледж</h2>
     <p>Страница в работе</p>
+  <p><a href="#top">Наверх</a></p>
+</main>
+<footer class="page-footer">
+    <p>Автор: Лаврентьева Милена. Учебная практика УП.09.</p>
+</footer>
+
+<nav class="main-nav">
+
   </body>
 </html>

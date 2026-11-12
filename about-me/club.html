@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный клуб — Главная страница</title>
+     <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать в Учебный клуб!</h1>
+             <nav class="main-nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="hobby.html">Мои увлечения</a></li>
+                <li><a href="college.html">Мой колледж</a></li>
+                <li><a href="season.html">Любимое время года</a></li>
+                <li><a href="application.html">Заявка</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="club.html">Клуб</a></li>
+                 <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+                  <li><a href="flex-lab.html">CSS Grid</a></li>
+                   <li><a href="position-lab.html">Лаборатория позиционирования</a></li>
+                   <li><a href="responsive-lab.html">Лаборатория адаптация</a></li>
+                   <li><a href="project.html" aria-current="page">Проект</a></li> 
+                   <li><a href="form-style-lab.html">Лабораторная: формы стилей</a></li>
+                   <li><a href="styles-check.html">Проверка стилей </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>О клубе</h2>
+            <p>Наш учебный клуб объединяет студентов, стремящихся к углубленному изучению современных технологий и программирования. Здесь мы делимся опытом, разбираем сложные задачи и вместе работаем над интересными проектами.</p>
+        </section>
+
+        <article>
+<h2>Последние события</h2>
+
+<div class="news-item">
+    Клуб любителей веб-разработки открывает новый сезон встреч!
+</div>
+
+<p class="news-description">
+    Ждем всех желающих каждую среду в 18:00. Вход свободный по предварительной регистрации.
+</p>
+
+        </article>
+
+        <section>
+            <h2>Ближайшие встречи</h2>
+            <table>
+                <caption>График проведения ближайших занятий клуба</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">День</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Кабинет</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td>Основы HTML5 и семантическая разметка</td>
+                        <td>Кабинет 401</td>
+                    </tr>
+                    <tr>
+                        <td>Среда</td>
+                        <td>Работа с формами и валидация данных</td>
+                        <td>Кабинет 405</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Запись на занятие</h2>
+            <p><em>Обратите внимание: все вводимые данные являются вымышленными и никуда не сохраняются.</em></p>
+            
+            <form action="club.html" method="get">
+                <div>
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" id="user-name" name="username" required>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="club-direction">Направление:</label>
+                    <select id="club-direction" name="direction" required>
+                        <option value="">-- Выберите направление --</option>
+                        <option value="web">Веб-разработка</option>
+                        <option value="design">Дизайн интерфейсов</option>
+                    </select>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label>
+                        <input type="checkbox" name="agreement" value="yes"> 
+                        Я согласен получать уведомления о встречах
+                    </label>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <button type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+<footer class="page-footer">
+    <p>Автор: Лаврентьева Милена. Учебная практика УП.09.</p>
+</footer>
+
+<nav class="main-nav">
+
+</body>
+</html>
