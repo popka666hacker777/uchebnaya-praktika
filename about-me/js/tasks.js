@@ -82,15 +82,15 @@ if (number > 0) {
   console.log('Ноль');
 }
 
-const userNumber = Number(prompt('Введите целое число'));
-
+//const userNumber = Number(prompt('Введите целое число'));
+/*
 if (Number.isNaN(userNumber)) {
   console.log('Это не число');
 } else if (userNumber % 2 === 0) {
   console.log(userNumber + ' – чётное');
 } else {
   console.log(userNumber + ' – нечётное');
-}
+}*/
 
 const score = 78;
 let mark;
@@ -145,7 +145,10 @@ switch (dayNumber) {
 console.log(`День ${dayNumber}: ${dayName}`);
 
 const isWeekend = dayNumber === 6 || dayNumber === 7;
+const isStudyDay = dayNumber >= 1 && dayNumber <= 5;
+
 console.log('Выходной:', isWeekend);
+console.log('будний день:', isStudyDay)
 
 // Самостоятельно
 const month = 4;
@@ -192,7 +195,7 @@ while (k <= n) {
 }
 
 console.log(`Сумма чисел от 1 до ${n}: ${sum}`);
-
+11
 const luckyNumber = 8;
 
 for (let i = 1; i <= 10; i++) {
@@ -331,7 +334,7 @@ console.log(doubled);
 console.log(big);
 console.log(numbers);
 
-const names = ['Анна', 'Борис', 'Алексей', 'Вера'];
+const names = ['Анна', 'Борис', 'Алексей', 'Верити'];
 const startsWithA = names.filter((item) => item.startsWith('А'));
 console.log(startsWithA.join(', '));
 const upperNames = names.map((item) => item.toUpperCase());
